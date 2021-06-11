@@ -1,0 +1,702 @@
+{
+    "category": [
+        {
+            "id": 1,
+            "title": "Phim mới"
+        },
+        {
+            "id": 2,
+            "title": "Thể loại",
+            "sub_item": [
+                {
+                    "id": 1,
+                    "title": "Âm nhạc",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "Cổ trang",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "Hành Động",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 4,
+                    "title": "Khoa học",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 5,
+                    "title": "TVB",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 6,
+                    "title": "Thể thao",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 7,
+                    "title": "Võ thuật-Kiếm hiệp",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 8,
+                    "title": "Anime",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 9,
+                    "title": "Đam mỹ",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 10,
+                    "title": "Hình sự",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 11,
+                    "title": "Kinh dị",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 12,
+                    "title": "Siêu nhiên",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 13,
+                    "title": "Trailer",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 14,
+                    "title": "Xuyên không",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 15,
+                    "title": "Bí ẩn",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 16,
+                    "title": "Gay cấn",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 17,
+                    "title": "Hoạt hình",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 18,
+                    "title": "Lịch sử",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 19,
+                    "title": "Tài liệu",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 20,
+                    "title": "Truyền hình",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 21,
+                    "title": "Chiến tranh",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 22,
+                    "title": "Gia đình",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 23,
+                    "title": "Học đường",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 24,
+                    "title": "Phiêu lưu",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 25,
+                    "title": "Tâm lý - Tình cảm",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 26,
+                    "title": "TV Show",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 27,
+                    "title": "Chính kịch",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 28,
+                    "title": "Hài hước",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 29,
+                    "title": "Hồi hộp",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 30,
+                    "title": "Phim 18",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 31,
+                    "title": "Thần thoại",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 32,
+                    "title": "Viễn tưởng",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Quốc gia",
+            "sub_item": [
+                {
+                    "id": 1,
+                    "title": "Ấn độ",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "Đài loan",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "Khác",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 4,
+                    "title": "Nhật bản",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 5,
+                    "title": "Trung quốc",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 6,
+                    "title": "Anh",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 7,
+                    "title": "Đức",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 8,
+                    "title": "Khác",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 9,
+                    "title": "Pháp",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 10,
+                    "title": "Úc",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 11,
+                    "title": "Canada",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 12,
+                    "title": "Hàn quốc",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 13,
+                    "title": "Mỹ",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 14,
+                    "title": "Tây ban nha",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 15,
+                    "title": "Việt nam",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 16,
+                    "title": "Châu âu",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 17,
+                    "title": "Hồng kông",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 18,
+                    "title": "Nga",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 19,
+                    "title": "Thái lan",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 20,
+                    "title": "Ý",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Phim lẻ",
+            "sub_item": [
+                {
+                    "id": 1,
+                    "title": "Phim Âm nhạc",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "Phim chính kịch",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "Phim Gia đình",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 4,
+                    "title": "Phim Hoạt hình",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 5,
+                    "title": "Phim kinh dị",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 6,
+                    "title": "Phim TVB",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 7,
+                    "title": "Phim Thần thoại",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 8,
+                    "title": "Phim Anime",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 9,
+                    "title": "Phim TV Show",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 10,
+                    "title": "Phim Cổ trang",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 11,
+                    "title": "Phim Hài hước",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 12,
+                    "title": "Học đường",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 13,
+                    "title": "Phim lịch sử",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 14,
+                    "title": "Phim siêu nhiên",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 15,
+                    "title": "Phim thể thao",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 16,
+                    "title": "Viễn tưởng",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 17,
+                    "title": "Phim bí ẩn",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 18,
+                    "title": "Phim đam mỹ",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 19,
+                    "title": "Phim hành động",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 20,
+                    "title": "Phim hồi hộp",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 21,
+                    "title": "Phim Phiêu lưu",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 22,
+                    "title": "Phim Tài liệu",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 23,
+                    "title": "Phim trailer",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 24,
+                    "title": "Võ thuật-Kiếm hiệp",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 25,
+                    "title": "Phim chiến tranh",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 26,
+                    "title": "Phim gây cấn",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 27,
+                    "title": "Phim Hình sự",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 28,
+                    "title": "Phim Khoa học",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 29,
+                    "title": "Phim 18",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 30,
+                    "title": "Tâm lý - Tình cảm",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 31,
+                    "title": "Phim truyền hình",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 32,
+                    "title": "Phim Xuyên không",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Phim bộ",
+            "sub_item": [
+                {
+                    "id": 1,
+                    "title": "Phim bộ Ấn độ",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "Phim bộ Châu âu",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "Phim bộ Hàn quốc",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 4,
+                    "title": "Phim bộ Khác",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 5,
+                    "title": "Phim bộ Nhật bản",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 6,
+                    "title": "Phim bộ Thái lan",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 7,
+                    "title": "Phim bộ Việt nam",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 8,
+                    "title": "Phim bộ Anh",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 9,
+                    "title": "Phim bộ Đài loan",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 10,
+                    "title": "Phim bộ Hồng kông",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 11,
+                    "title": "Phim bộ Mỹ",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 12,
+                    "title": "Phim bộ úc",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 13,
+                    "title": "Phim bộ Pháp",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 14,
+                    "title": "Phim bộ Trung quốc",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 15,
+                    "title": "Phim bộ Ý",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 16,
+                    "title": "Phim bộ canada",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 17,
+                    "title": "Phim bộ Đức",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 18,
+                    "title": "Phim bộ Khác",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 19,
+                    "title": "Phim bộ Nga",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                },
+                {
+                    "id": 20,
+                    "title": "Phim bộ Tây ban nha",
+                    "link": "https://assets.materialup.com/uploads/480d36a3-b732-494e-b92a-42c82e69a653/preview.jpg"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Phim đề cử"
+        },
+        {
+            "id": 7,
+            "title": "Phim chiếu rạp"
+        },
+        {
+            "id": 8,
+            "title": "Album phim"
+        }
+    ],
+    "video": [
+        {
+            "id": 1,
+            "name": "ANH HÙNG XẠ ĐIÊU: CỬU ÂM BẠCH CỐT TRẢO",
+            "title": "The Legend of the Condor Heroes: The Cadaverous Claws (2021‏)",
+            "poster": "./data/poster/the-legend-of-the-condor-heroes-the-cadaverous-claws1623312739.png",
+            "national": "Trung Quốc",
+            "time": 110,
+            "actor": [
+                "Nghiêm Khoan",
+                "Uông Tiểu Mẫn",
+                "Hà Sưởng Hy",
+                "Nguyễn Cự",
+                "Hoàng Hi Ngạn",
+                "Canh Đăng"
+            ],
+            "status": "HD VietSub",
+            "type": [
+                "phim cổ trang",
+                "phim bộ trung quốc",
+                "Võ Thuật - Kiếm Hiệp",
+                "Tâm Lý - Tình Cảm",
+                "Cổ Trang"
+            ],
+            "description": "Thiếu nữ Mai Nhược Hoa lưu lạc khắp nơi được Hoàng Dược Sư thu nhận làm đồ đề và đổi tên thành Mai Siêu Phong. Từ đó, cô được Hoàng Dược Sư truyền dạy võ công và lớn lên cùng các sư huynh trên đảo Đào Hoa. Tuy nhiên, Hoàng Dược Sư phát hiện tình cảm của Mai Siêu Phong đối với mình đã vượt qua tình thầy trò, vì vậy mà ông quyết định tạm rời xa Đào Hoa Đảo.Hai năm sau, Hoàng Dược Sư cùng thê tử Phùng Hằng và nửa bộ Cửu Âm Chân Kinh trở về đảo"
+        },
+        {
+            "id": 2,
+            "name": "KẺ PHẢN NGHỊCH",
+            "title": "The Rebel (2021‏)",
+            "poster": "./data/poster/the-rebel1623310402.jpg",
+            "national": "Trung Quốc",
+            "time": 110,
+            "status": "Tập 8 VIETSUB",
+            "actor": [
+                "Chu Nhất Long",
+                "Đồng Dao"
+            ],
+            "type": [
+                "Chiến Tranh",
+                "phim bộ trung quốc",
+                "Tâm Lý - Tình Cảm"
+            ],
+            "description": "Kẻ Phản Nghịch kể về năm 1936, học viên lớp đào tạo cán bộ Hội Phục Hưng Lâm Nam Sênh bị đưa đến Thượng Hải tham gia hoạt động bắt giữ các thành viên thuộc Đảng bí mật. Trong quá trình thực hiện, Lâm Nam Sênh bị tinh thần hy sinh cũng như sứ mệnh của những người Đảng Cộng sản làm cho dao động. Lâm Nam Sênh dũng cảm quyết đoán, nhiều lần lập công trong quá trình kháng chiến chống Nhật. Nhiều lần đứng về phía Đảng Cộng sản, lợi dụng thân phận đặc biệt của mình trong quân đội giúp đỡ vô cùng lớn cho Đảng bí mật. Sau khí kháng chiến thắng lợi, Lâm Nam Sênh trở thành một Đảng viên chân chính, đồng thời vào thời khắc quyết định giải phóng, đã cống hiến rất nhiều cho đất nước và Đảng Cộng sản."
+        },
+        {
+            "id": 3,
+            "name": "STAR WARS: JEDI CUỐI CÙNG",
+            "title": "Star Wars: The Last Jedi (2017)",
+            "poster": "./data/poster/star-wars-the-last-jedi.jpg",
+            "national": "Mỹ",
+            "time": 110,
+            "status": "HD VietSub",
+            "actor": [
+                "Tom Hardy",
+                "Gwendoline Christie",
+                "Daisy Ridley",
+                "Laura Dern",
+                "Oscar Isaac",
+                "Benicio Del Toro",
+                "Domhnall Gleeson",
+                "Adam Driver",
+                "Mark Hamill",
+                "Carrie Fisher",
+                "Billie Lourd",
+                "Andy Serkis",
+                "Lupita Nyong'o",
+                "Kelly Marie Tran",
+                "Warwick Davis"
+            ],
+            "type": [
+                "Hành Động",
+                "Viễn Tưởng",
+                "Phiêu Lưu"
+            ],
+            "description": "Having taken her first steps into a larger world in Star Wars: Than Luc Thuc Tinh (2015), Rey continues her epic journey with Finn, Poe and Luke Skywalker in the next chapter of the saga."
+        },
+        {
+            "id": 4,
+            "name": "BẢN NĂNG HOANG DẠI",
+            "title": "Voyagers (2021)",
+            "poster": "./data/poster/voyagers1620311197.jpg",
+            "national": "Mỹ",
+            "time": 118,
+            "status": "HD VietSub",
+            "actor": [
+                "Colin Farrell",
+                "Tye Sheridan",
+                "Lily-Rose"
+            ],
+            "type": [
+                "Viễn Tưởng",
+                "Phiêu Lưu",
+                "Hình Sự"
+            ],
+            "description": "Một nhóm thanh thiếu niên bắt đầu một chuyến hành trình khai phá sự sống ở một hành tinh xa xôi khác. Tuy nhiên, họ phát hiện ra bí mật được che giấu đằng sau nhiệm vụ cao cả này, tất cả bắt đầu kháng cự lại việc huấn luyện và để bản năng nguyên thuỷ lấn chiếm cảm xúc. Khi vận mệnh của cả phi đoàn rơi vào hỗn loạn, họ bị chôn vùi trong sợ hãi, ham muốn và cơn khao khát quyền lực."
+        },
+        {
+            "id": 4,
+            "name": "BẢN NĂNG HOANG DẠI",
+            "title": "Voyagers (2021)",
+            "poster": "./data/poster/voyagers1620311197.jpg",
+            "national": "Mỹ",
+            "time": 118,
+            "status": "HD VietSub",
+            "actor": [
+                "Colin Farrell",
+                "Tye Sheridan",
+                "Lily-Rose"
+            ],
+            "type": [
+                "Viễn Tưởng",
+                "Phiêu Lưu",
+                "Hình Sự"
+            ],
+            "description": "Một nhóm thanh thiếu niên bắt đầu một chuyến hành trình khai phá sự sống ở một hành tinh xa xôi khác. Tuy nhiên, họ phát hiện ra bí mật được che giấu đằng sau nhiệm vụ cao cả này, tất cả bắt đầu kháng cự lại việc huấn luyện và để bản năng nguyên thuỷ lấn chiếm cảm xúc. Khi vận mệnh của cả phi đoàn rơi vào hỗn loạn, họ bị chôn vùi trong sợ hãi, ham muốn và cơn khao khát quyền lực."
+        },
+        {
+            "id": 4,
+            "name": "BẢN NĂNG HOANG DẠI",
+            "title": "Voyagers (2021)",
+            "poster": "./data/poster/voyagers1620311197.jpg",
+            "national": "Mỹ",
+            "time": 118,
+            "status": "HD VietSub",
+            "actor": [
+                "Colin Farrell",
+                "Tye Sheridan",
+                "Lily-Rose"
+            ],
+            "type": [
+                "Viễn Tưởng",
+                "Phiêu Lưu",
+                "Hình Sự"
+            ],
+            "description": "Một nhóm thanh thiếu niên bắt đầu một chuyến hành trình khai phá sự sống ở một hành tinh xa xôi khác. Tuy nhiên, họ phát hiện ra bí mật được che giấu đằng sau nhiệm vụ cao cả này, tất cả bắt đầu kháng cự lại việc huấn luyện và để bản năng nguyên thuỷ lấn chiếm cảm xúc. Khi vận mệnh của cả phi đoàn rơi vào hỗn loạn, họ bị chôn vùi trong sợ hãi, ham muốn và cơn khao khát quyền lực."
+        }
+    ]
+}
