@@ -1,7 +1,9 @@
 :root {
     --max-width: 1200px;
     --carousel-wrapper-with: 806px;
-    --carousel-box-with: calc(var(--carousel-wrapper-with) - 10px)
+    --carousel-box-with: 
+        calc(var(--carousel-wrapper-with) - 10px);
+    --background-color-carousel: rgb(5, 0, 0);
 }
 
 * {
@@ -221,7 +223,7 @@ body {
 .carousel-wrapper {
     border-radius: 3px;
     position: relative;
-    background-color: rgb(5, 0, 0);
+    background-color: var(--background-color-carousel);
     width: var(--carousel-wrapper-with);
     height: 310px;
     display: flex;
@@ -230,6 +232,15 @@ body {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+}
+
+.carousel-wrapper:after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    background-color: var(--background-color-carousel);
 }
 
 .box-carousel {
@@ -284,10 +295,6 @@ body {
     -moz-transition: transform 0.3s ;
     -ms-transition: transform 0.3s ;
     -o-transition: transform 0.3s ;
-}
-.top-film {
-    border: 1px solid yellow;
-    width: 342px;
 }
 
 .info-carousel {
@@ -371,4 +378,88 @@ body {
     color: #fff;
     width: 26px;
     height: 40px;
+}
+
+.top-film {
+    overflow-y: scroll;
+    border-radius: 4px;
+    padding: 0 4px;
+    width: 342px;
+    height: 310px;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+
+.item-top-film {
+    list-style: none;
+}
+
+.link-top-film {
+    text-decoration: none;
+}
+
+.box-top-film {
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    border-radius: 2px;
+    margin-top: 10px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.poster-top-film {
+    background-image: url("https://i3.wp.com/img.goophim.net/storage/2021/06/my-dear-guardian1622564943.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 40px;
+}
+
+.content-top-film {
+    margin-left: 8px;
+    line-height: 20px;
+}
+
+.name-top-film {
+    font-size: 0.8rem;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    color: #f3cd23;
+}
+
+.title-top-film {
+    font-size: 0.8rem;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    color: #fff;
+
+}
+
+.views-top-film {
+    display: flex;
+    margin-left: 6px;
+}
+
+.eye-icon {
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.number-views {
+    color: #fff;
+    font-size: 0.8rem;
+    margin-left: 4px;
 }
