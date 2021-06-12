@@ -63,13 +63,13 @@ const web = {
     },
 
     handleCarousel() {
+        const boxCarousel = $('.box-carousel');
         fetch(this.dataMovies)
             .then(response => response.json())
             .then(data => renderMovies(data))
             .catch(() => console.error("Not found api"))
 
         renderMovies = (data) => {
-            const boxCarousel = $('.box-carousel');
             var output = data.map(item => {
                 return `
                     <div class="carousel-item">
@@ -90,24 +90,50 @@ const web = {
             })
             boxCarousel.innerHTML = output.join('\n')
 
+            const carouselWrapper = $(".carousel-wrapper");
             const carouselItem = $$(".carousel-item");
             const nextC = $('.next-carousel');
             const prevC = $('.previous-carousel');
-            var a = 0;
+            let x = 1;
+            let startX = boxCarousel.clientWidth;
+            var c;
+            var lastItem = carouselItem[carouselItem.length - 1]
+            var marginItem =
+                parseInt(getComputedStyle(lastItem).marginLeft.slice(0, 2))
 
             nextC.onclick = () => {
-                for (item of carouselItem) {
-                    a = item.offsetWidth
-                    item.style.right = a + "px"
+                if ((lastItem.offsetLeft - lastItem.clientWidth)
+                    < carouselWrapper.clientWidth) {
+                    c = (carouselItem.length * lastItem.clientWidth
+                        + (carouselItem.length * marginItem) + marginItem)
+                        - carouselWrapper.clientWidth
+                } else {
+                    c = startX * x;
                 }
+                for (item of carouselItem) {
+                    item.style.right = c + 'px'
+                }
+                x++
             }
 
             prevC.onclick = () => {
-                carouselItem.forEach((item, i) => {
-                    // item.style.right = item.offsetWidth + "px"
-                    console.log([item])
-                })
+
+                if ((boxCarousel.scrollWidth - carouselWrapper.clientWidth)
+                    < lastItem.offsetLeft) {
+                    c = 0
+                } else {
+                    c = c - startX
+                }
+                for (item of carouselItem) {
+                    item.style.right = c + 'px'
+                }
+                if (x > 1) {
+                    x--
+                } else {
+                    x = 1
+                }
             }
+
         }
     },
 
