@@ -214,7 +214,7 @@ body {
 }
 
 .popular-movies {
-    margin-top: 78px;
+    margin-top: 10px;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -241,6 +241,11 @@ body {
     top: 0;
     bottom: 0;
     background-color: var(--background-color-carousel);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .box-carousel {
@@ -383,9 +388,9 @@ body {
 .top-film {
     overflow-y: scroll;
     border-radius: 4px;
-    padding: 0 4px;
     width: 342px;
     height: 310px;
+    border: 6px solid #29323c;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -393,19 +398,27 @@ body {
     -o-border-radius: 4px;
 }
 
+.top-film::-webkit-scrollbar {
+    display: none;
+}
+
 
 .item-top-film {
+    margin-top: 10px;
     list-style: none;
+}
+
+.item-top-film:first-child {
+    margin-top: 0;
 }
 
 .link-top-film {
     text-decoration: none;
 }
 
-.box-top-film {
+.wrapper-top-film {
     border: 1px solid rgba(255, 255, 255, 0.39);
     border-radius: 2px;
-    margin-top: 10px;
     padding: 8px;
     display: flex;
     justify-content: space-between;
@@ -416,15 +429,37 @@ body {
     -o-border-radius: 2px;
 }
 
-.poster-top-film {
-    background-image: url("https://i3.wp.com/img.goophim.net/storage/2021/06/my-dear-guardian1622564943.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 60px;
-    height: 40px;
+.title-box-top-film, 
+.title-box-carousel-wrapper {
+    font-size: 1.4rem;
+    font-style: oblique;
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #f3cd23;
+    margin-bottom: 10px;
+    padding: 8px 4px;
+    font-family: Cambria;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
+.title-box-carousel-wrapper {
+    max-width:300px
+}
+
+
+.img-backgr {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+} 
+
 .content-top-film {
+    width: 65%;
     margin-left: 8px;
     line-height: 20px;
 }
@@ -455,11 +490,94 @@ body {
 
 .eye-icon {
     color: #fff;
+    margin-left: 8px;
     font-size: 0.8rem;
 }
 
 .number-views {
     color: #fff;
     font-size: 0.8rem;
-    margin-left: 4px;
+}
+
+.wrapper-list-film {
+    padding: 0 20px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.box-tag {
+    width: 300px;
+    background-color: #1A1A1A;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding: 6px;
+}
+
+.header-tag {
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header-tag h1{
+    font-size: 1.4rem;
+    font-style: oblique;
+    color: #fff;
+    margin-left: 10px;
+    font-family: Cambria;
+}
+
+.header-tag svg {
+    width: 26px;
+    height: 26px;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+}
+
+.header-tag svg path {
+    color: #fff;
+}
+
+.header-tag::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 6px;
+    background-color: rgb(230, 220, 220);    
+}
+
+.list-tag {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-tag {
+    margin: 4px 6px;
+    padding: 8px;
+    list-style: none;
+    background-color: #505A68;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.link-tag {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #ededed;
+}
+
+.box-list-film {
+    border: 1px solid red;
 }

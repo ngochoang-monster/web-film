@@ -4,6 +4,7 @@ const $$ = document.querySelectorAll.bind(document);
 const cateElement = $('.list-options');
 const subELement = $('.sub-menu');
 const listELement = $('.list-sub');
+const topVideoElment = $(".list-top-film");
 
 
 const web = {
@@ -66,12 +67,9 @@ const web = {
         const boxCarousel = $('.box-carousel');
         fetch(this.dataMovies)
             .then(response => response.json())
-            .then(data => renderMovies(data))
-            .catch(() => console.error("Not found api"))
-
-        renderMovies = (data) => {
-            var output = data.map(item => {
-                return `
+            .then(data => {
+                var output = data.map(item => {
+                    return `
                     <div class="carousel-item">
                         <a href="#" class="link-movie">
                             <div class="poster-carousel"
@@ -87,54 +85,81 @@ const web = {
                         </a>
                     </div>
                 `
+                })
+                boxCarousel.innerHTML = output.join('\n')
+
+                const carouselWrapper = $(".carousel-wrapper");
+                const carouselItem = $$(".carousel-item");
+                const nextC = $('.next-carousel');
+                const prevC = $('.previous-carousel');
+                let x = 1;
+                let startX = boxCarousel.clientWidth;
+                var c;
+                var lastItem = carouselItem[carouselItem.length - 1]
+                var marginItem =
+                    parseInt(getComputedStyle(lastItem).marginLeft.slice(0, 2))
+
+                nextC.onclick = () => {
+                    if ((lastItem.offsetLeft - lastItem.clientWidth)
+                        < carouselWrapper.clientWidth) {
+                        c = (carouselItem.length * lastItem.clientWidth
+                            + (carouselItem.length * marginItem) + marginItem)
+                            - carouselWrapper.clientWidth
+                    } else {
+                        c = startX * x;
+                    }
+                    for (item of carouselItem) {
+                        item.style.right = c + 'px'
+                    }
+                    x++
+                }
+
+                prevC.onclick = () => {
+
+                    if ((boxCarousel.scrollWidth - carouselWrapper.clientWidth)
+                        < lastItem.offsetLeft) {
+                        c = 0
+                    } else {
+                        c = c - startX
+                    }
+                    for (item of carouselItem) {
+                        item.style.right = c + 'px'
+                    }
+                    if (x > 1) {
+                        x--
+                    } else {
+                        x = 1
+                    }
+                }
+                return data
             })
-            boxCarousel.innerHTML = output.join('\n')
+            .then(data => {
+                var topVideo = data.filter(item => item.views > 100000)
+                    .sort((a, b) => b.views - a.views)
+                    .slice(0, 10)
+                var output = topVideo.map(item => {
+                    return `
+                        <li class="item-top-film">
+                            <a href="#" class="link-top-film">
+                                <div class="wrapper-top-film">
+                                    <div class="img-backgr" style="background-image: url(${item.poster})"></div>
+                                    <div class="content-top-film">
+                                        <h4 class="name-top-film">${item.name}</h4>
+                                        <span class="title-top-film">${item.title}</span>
+                                    </div>
+                                    <div class="views-top-film">
+                                        <div class="number-views">${item.views.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")}</div>
+                                        <span class="eye-icon"><i class="far fa-eye"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    `
+                })
 
-            const carouselWrapper = $(".carousel-wrapper");
-            const carouselItem = $$(".carousel-item");
-            const nextC = $('.next-carousel');
-            const prevC = $('.previous-carousel');
-            let x = 1;
-            let startX = boxCarousel.clientWidth;
-            var c;
-            var lastItem = carouselItem[carouselItem.length - 1]
-            var marginItem =
-                parseInt(getComputedStyle(lastItem).marginLeft.slice(0, 2))
-
-            nextC.onclick = () => {
-                if ((lastItem.offsetLeft - lastItem.clientWidth)
-                    < carouselWrapper.clientWidth) {
-                    c = (carouselItem.length * lastItem.clientWidth
-                        + (carouselItem.length * marginItem) + marginItem)
-                        - carouselWrapper.clientWidth
-                } else {
-                    c = startX * x;
-                }
-                for (item of carouselItem) {
-                    item.style.right = c + 'px'
-                }
-                x++
-            }
-
-            prevC.onclick = () => {
-
-                if ((boxCarousel.scrollWidth - carouselWrapper.clientWidth)
-                    < lastItem.offsetLeft) {
-                    c = 0
-                } else {
-                    c = c - startX
-                }
-                for (item of carouselItem) {
-                    item.style.right = c + 'px'
-                }
-                if (x > 1) {
-                    x--
-                } else {
-                    x = 1
-                }
-            }
-
-        }
+                topVideoElment.innerHTML = output.join('\n')
+            })
+            .catch(() => console.error("Not found api"))
     },
 
     start() {
