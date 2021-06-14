@@ -207,10 +207,9 @@ body {
 }
 
 .main {
-    height: 100vh;
     max-width: var(--max-width);
     margin: 0 auto;
-    border: 1px solid #fafa;
+    /* border: 1px solid #fafa; */
 }
 
 .popular-movies {
@@ -429,21 +428,20 @@ body {
     -o-border-radius: 2px;
 }
 
-.title-box-top-film, 
-.title-box-carousel-wrapper {
+.title-name {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: rgb(247, 191, 8);
+    padding: 12px 4px;
+    font-family: "Bahnschrift Condensed";
+}
+
+.title-box-carousel-wrapper,
+.title-box-top-film {
     font-size: 1.4rem;
-    font-style: oblique;
     color: #fff;
-    text-decoration: underline;
-    text-decoration-color: #f3cd23;
-    margin-bottom: 10px;
     padding: 8px 4px;
     font-family: Cambria;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 
 .title-box-carousel-wrapper {
@@ -506,7 +504,8 @@ body {
 }
 
 .box-tag {
-    width: 300px;
+    height: 300px;
+    width: 280px;
     background-color: #1A1A1A;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -518,17 +517,18 @@ body {
 
 .header-tag {
     position: relative;
-    height: 50px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
 }
 
 .header-tag h1{
-    font-size: 1.4rem;
-    font-style: oblique;
+    margin-bottom: 0;
     color: #fff;
     margin-left: 10px;
     font-family: Cambria;
+    font-size: 1.4rem;
+    padding: 8px 4px;
 }
 
 .header-tag svg {
@@ -548,11 +548,11 @@ body {
 .header-tag::after {
     content: "";
     position: absolute;
-    height: 1px;
+    height: 0.5px;
     left: 0;
     right: 0;
-    bottom: 6px;
-    background-color: rgb(230, 220, 220);    
+    bottom: -6px;
+    background-color: rgb(230, 220, 220);
 }
 
 .list-tag {
@@ -573,11 +573,155 @@ body {
 }
 
 .link-tag {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-decoration: none;
     color: #ededed;
 }
 
 .box-list-film {
-    border: 1px solid red;
+    width: 870px;
+    margin-right: 10px;
+    background-color: #1A1A1A;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    
+}
+
+.title-list-film {
+    border-bottom: 1px solid #fff;
+}
+
+.list-film {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.item-film {
+    list-style: none;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+
+.link-item-film {
+    text-decoration: none;
+}
+
+.main-box {
+    height: 300px;
+    position: relative;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+}
+
+
+.poster-film {
+    position: relative;
+    background-image: url("https://img.goophim.net/storage/2021/05/new-horizon1622132590.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    border: 1px solid #fff;
+}
+
+.poster-film:hover {
+    border: 1px solid #f3cd23;
+    opacity: 0.8;
+}
+
+
+.info-film {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 48px;
+    background-color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 8px 8px 0 8px;
+    border-radius: 3px;
+}
+
+.info-film h1{
+    font-size: 0.8rem;
+    line-height: 20px;
+    color: rgb(245, 216, 50);
+    text-transform: uppercase;
+}
+
+.info-film h4{
+    font-size: 0.7rem;
+    color: rgb(41, 224, 215);
+}
+
+.time-video-film span {
+    font-size: 0.8rem;
+    color: #edededc4;
+}
+
+.title-film {
+    position: absolute;
+    top: 5px;
+    background-color: rgb(105, 2, 2);
+    text-align: center;
+    transition: all linear 0.3s;
+    border-bottom-right-radius: 3px;
+}
+
+.title-film span{
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 4px 8px;
+}
+
+.footer {
+    margin-top: 40px;
+    
+    height: 200px;
+    border-top: 2px solid #f3cd23;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+.wrapper-footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.logo-footer {
+    width:100px
+}
+
+.logo-footer img {
+    width: 100%;
+}
+
+.list-top-studio {
+    display: flex;
+    align-items: center;
+}
+
+.studio-item {
+    list-style: none;
+}
+
+.studio-item img {
+    width: 60px;
 }
