@@ -5,7 +5,10 @@ const cateElement = $('.list-options');
 const subELement = $('.sub-menu');
 const listELement = $('.list-sub');
 const topVideoElment = $(".list-top-film");
-
+const titleCarousel = $('.title-box-carousel-wrapper');
+const boxListFilm = $$('.box-list-film');
+const titleName = $$('.title-name');
+const listFilm = $$('.list-film')
 
 const web = {
     dataHeader: "http://localhost:3000/category",
@@ -69,8 +72,9 @@ const web = {
         fetch(this.dataMovies)
             .then(response => response.json())
             .then(data => {
+                const title = titleCarousel.textContent.toLowerCase()
                 var results = data.filter(item => {
-                    return item.title.includes("phim đề cử")
+                    return item.title.includes(title)
                 })
                 var output = results.map(item => {
                     return `
@@ -102,16 +106,15 @@ const web = {
                 var c;
                 var marginItem =
                     parseInt(getComputedStyle(lastItem).marginLeft.slice(0, 2));
-                let startX = lastItem.clientWidth * 3 + marginItem;
+                let startX = lastItem.clientWidth * 3 + marginItem * 3;
 
-                nextC.onclick = (e) => {
+                nextC.onclick = () => {
                     if (this.isNext) {
                         x++
                     } else {
                         x = x
                     }
-                    console.log(x)
-                    if ((lastItem.offsetLeft - lastItem.clientWidth)
+                    if ((lastItem.offsetLeft - lastItem.clientWidth - marginItem)
                         < carouselWrapper.clientWidth) {
                         c = (carouselItem.length * lastItem.clientWidth
                             + (carouselItem.length * marginItem) + marginItem)
@@ -133,7 +136,6 @@ const web = {
                     } else {
                         x = 0
                     }
-                    console.log(x)
                     if ((boxCarousel.scrollWidth - carouselWrapper.clientWidth)
                         < lastItem.offsetLeft) {
                         c = 0
@@ -171,6 +173,71 @@ const web = {
                 })
 
                 topVideoElment.innerHTML = output.join('\n')
+                return data;
+            })
+            .then(data => {
+                var obj = {
+                    a: []
+                };
+                titleName.forEach((titleName, index) => {
+                    var results = data.filter(item => item.title.includes(titleName.textContent.toLowerCase()))
+
+                    var output = results.map(item => {
+                        return `
+                        <li class="item-film">
+                            <a href="#" class="link-item-film">
+                                <div class="main-box">
+                                    <div class="poster-film" style="background-image: url(${item.poster})">
+                                        <div class="info-film">
+                                            <div class="info">
+                                                <h1>${item.name}</h1>
+                                                <h4>${item.sub_name}</h4>
+                                            </div>
+                                            <div class="time-video-film">
+                                                <span>${item.time} phút</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="title-film">
+                                        <span>${item.status}</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    `
+                    })
+                    obj.a.push(output)
+                })
+
+                listFilm.forEach((item, index) => {
+                    item.innerHTML = obj.a[index].join("")
+                })
+
+                // var output = results.map(item => {
+                //     return `
+                //     <li class="item-film">
+                //         <a href="#" class="link-item-film">
+                //             <div class="main-box">
+                //                 <div class="poster-film" style="background-image: url(${item.poster})">
+                //                     <div class="info-film">
+                //                         <div class="info">
+                //                             <h1>${item.name}</h1>
+                //                             <h4>${item.sub_name}</h4>
+                //                         </div>
+                //                         <div class="time-video-film">
+                //                             <span>${item.time} phút</span>
+                //                         </div>
+                //                     </div>
+                //                 </div>
+                //                 <div class="title-film">
+                //                     <span>${item.status}</span>
+                //                 </div>
+                //             </div>
+                //         </a>
+                //     </li>
+                //     `
+                // })
+
             })
             .catch(() => console.error("Not found api"))
     },

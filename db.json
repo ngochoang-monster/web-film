@@ -621,7 +621,8 @@
             "name": "STAR WARS: JEDI CUỐI CÙNG",
             "title": [
                 "phim đề cử",
-                "phim mới"
+                "phim mới",
+                "phim chiếu rạp"
             ],
             "sub_name": "Star Wars: The Last Jedi (2017)",
             "poster": "./data/poster/star-wars-the-last-jedi.jpg",
@@ -705,7 +706,8 @@
             "name": "KÝ SỰ HOÀNG KIM",
             "title": [
                 "phim đề cử",
-                "phim mới"
+                "phim mới",
+                "phim chiếu rạp"
             ],
             "sub_name": "Chain Chronicle: The Light of Haecceitas (2017)",
             "poster": "./data/poster/chain-chronicle-the-light-of-haecceitas.jpg",
@@ -875,7 +877,6 @@
             "id": 13,
             "name": "SONG THẾ SỦNG PHI 3",
             "title": [
-                "phim đề cử",
                 "phim lẻ"
             ],
             "sub_name": "The Eternal Love 3 (2021‏)",
@@ -912,7 +913,7 @@
             "poster": "./data/poster/home-sweet-home1623649220.jpg",
             "national": "Trung Quốc",
             "time": 109,
-            "views": "",
+            "views": "100",
             "status": "HD VietSub",
             "actor": [
                 "Quách Phú Thành",
@@ -931,13 +932,14 @@
             "id": 15,
             "name": "LƯỠI CƯA (PHẦN 9)",
             "title": [
+                "phim mới",
                 "phim lẻ"
             ],
             "sub_name": "Spiral: From The Book Of Saw (2021)",
             "poster": "./data/poster/spiral-from-the-book-of-saw1622884404.jpg",
             "national": "Mỹ",
             "time": 93,
-            "views": "",
+            "views": "2000",
             "status": "HD VietSub",
             "actor": [
                 "Chris Rock",
@@ -956,6 +958,7 @@
             "id": 16,
             "name": "CƯỚP BIỂN VÙNG CARIBBE 5: SALAZAR BÁO THÙ",
             "title": [
+                "phim mới",
                 "phim lẻ"
             ],
             "sub_name": "Pirates of the Caribbean 5: Dead Men Tell No Tales (2017)",

@@ -580,6 +580,7 @@ body {
 
 .box-list-film {
     width: 870px;
+    margin-bottom: 10px;
     margin-right: 10px;
     background-color: #1A1A1A;
     border-radius: 3px;
@@ -645,8 +646,9 @@ body {
 
 .info-film {
     position: absolute;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 134px 1fr;
+    justify-items: center;
     align-items: center;
     left: 0;
     right: 0;
@@ -663,14 +665,27 @@ body {
     line-height: 20px;
     color: rgb(245, 216, 50);
     text-transform: uppercase;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-transform: uppercase;
+    overflow: hidden;
+
 }
+
 
 .info-film h4{
     font-size: 0.7rem;
     color: rgb(41, 224, 215);
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 
+
 .time-video-film span {
+    width: 8px;
     font-size: 0.8rem;
     color: #edededc4;
 }
@@ -688,7 +703,7 @@ body {
     text-transform: capitalize;
     color: #fff;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 4px 8px;
 }
 
