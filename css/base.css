@@ -694,34 +694,61 @@ body {
 
 .footer {
     margin-top: 40px;
-    
-    height: 200px;
+    height: 140px;
     border-top: 2px solid #f3cd23;
     background-color: rgba(0, 0, 0, 0.425);
 }
 
 .wrapper-footer {
+    padding: 0 20px;
     max-width: var(--max-width);
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .logo-footer {
-    width:100px
+    width:60px
 }
 
 .logo-footer img {
     width: 100%;
 }
 
-.list-top-studio {
-    display: flex;
-    align-items: center;
+.section-footer {
+    margin-left: 20px;
 }
 
-.studio-item {
+.item-content-footer {
     list-style: none;
+    padding: 4px 0;
 }
 
-.studio-item img {
-    width: 60px;
+.link-footer {
+    text-decoration: none;
+    color: #fff;
+}
+
+.section-footer {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+.box-email input {
+    padding: 6px 10px;
+    outline: none;
+    width: 220px;
+    font-size: 1rem;
+    font-family: "Helvetica";
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    color: #fff;
+    background-color: #29323c;
+    border: 1px solid #fea;
 }

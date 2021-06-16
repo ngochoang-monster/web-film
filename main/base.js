@@ -11,6 +11,7 @@ const web = {
     dataHeader: "http://localhost:3000/category",
     dataMovies: "http://localhost:3000/video",
     isMouseDown: false,
+    isNext: true,
 
     handleHeaders() {
         fetch(this.dataHeader)
@@ -68,7 +69,10 @@ const web = {
         fetch(this.dataMovies)
             .then(response => response.json())
             .then(data => {
-                var output = data.map(item => {
+                var results = data.filter(item => {
+                    return item.title.includes("phim đề cử")
+                })
+                var output = results.map(item => {
                     return `
                     <div class="carousel-item">
                         <a href="#" class="link-movie">
@@ -77,7 +81,7 @@ const web = {
                             </div>
                             <div class="info-carousel">
                                 <h1>${item.name}</h1>
-                                <h4>${item.title}</h4>
+                                <h4>${item.sub_name}</h4>
                             </div>
                             <div class="title">
                                 <span>${item.status}</span>
@@ -86,36 +90,50 @@ const web = {
                     </div>
                 `
                 })
+
                 boxCarousel.innerHTML = output.join('\n')
 
                 const carouselWrapper = $(".carousel-wrapper");
                 const carouselItem = $$(".carousel-item");
                 const nextC = $('.next-carousel');
                 const prevC = $('.previous-carousel');
-                let x = 1;
-                let startX = boxCarousel.clientWidth;
-                var c;
+                var x = 0;
                 var lastItem = carouselItem[carouselItem.length - 1]
+                var c;
                 var marginItem =
-                    parseInt(getComputedStyle(lastItem).marginLeft.slice(0, 2))
+                    parseInt(getComputedStyle(lastItem).marginLeft.slice(0, 2));
+                let startX = lastItem.clientWidth * 3 + marginItem;
 
-                nextC.onclick = () => {
+                nextC.onclick = (e) => {
+                    if (this.isNext) {
+                        x++
+                    } else {
+                        x = x
+                    }
+                    console.log(x)
                     if ((lastItem.offsetLeft - lastItem.clientWidth)
                         < carouselWrapper.clientWidth) {
                         c = (carouselItem.length * lastItem.clientWidth
                             + (carouselItem.length * marginItem) + marginItem)
                             - carouselWrapper.clientWidth
+                        this.isNext = false;
                     } else {
                         c = startX * x;
                     }
                     for (item of carouselItem) {
                         item.style.right = c + 'px'
                     }
-                    x++
+
                 }
 
                 prevC.onclick = () => {
-
+                    this.isNext = true;
+                    if (x > 1) {
+                        x--
+                    } else {
+                        x = 0
+                    }
+                    console.log(x)
                     if ((boxCarousel.scrollWidth - carouselWrapper.clientWidth)
                         < lastItem.offsetLeft) {
                         c = 0
@@ -125,16 +143,11 @@ const web = {
                     for (item of carouselItem) {
                         item.style.right = c + 'px'
                     }
-                    if (x > 1) {
-                        x--
-                    } else {
-                        x = 1
-                    }
                 }
                 return data
             })
             .then(data => {
-                var topVideo = data.filter(item => item.views > 100000)
+                var topVideo = data.filter(item => item.views)
                     .sort((a, b) => b.views - a.views)
                     .slice(0, 10)
                 var output = topVideo.map(item => {
@@ -145,7 +158,7 @@ const web = {
                                     <div class="img-backgr" style="background-image: url(${item.poster})"></div>
                                     <div class="content-top-film">
                                         <h4 class="name-top-film">${item.name}</h4>
-                                        <span class="title-top-film">${item.title}</span>
+                                        <span class="title-top-film">${item.sub_name}</span>
                                     </div>
                                     <div class="views-top-film">
                                         <div class="number-views">${item.views.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")}</div>
@@ -160,6 +173,10 @@ const web = {
                 topVideoElment.innerHTML = output.join('\n')
             })
             .catch(() => console.error("Not found api"))
+    },
+
+    renderListVideo() {
+
     },
 
     start() {
