@@ -212,32 +212,6 @@ const web = {
                 listFilm.forEach((item, index) => {
                     item.innerHTML = obj.a[index].join("")
                 })
-
-                // var output = results.map(item => {
-                //     return `
-                //     <li class="item-film">
-                //         <a href="#" class="link-item-film">
-                //             <div class="main-box">
-                //                 <div class="poster-film" style="background-image: url(${item.poster})">
-                //                     <div class="info-film">
-                //                         <div class="info">
-                //                             <h1>${item.name}</h1>
-                //                             <h4>${item.sub_name}</h4>
-                //                         </div>
-                //                         <div class="time-video-film">
-                //                             <span>${item.time} phút</span>
-                //                         </div>
-                //                     </div>
-                //                 </div>
-                //                 <div class="title-film">
-                //                     <span>${item.status}</span>
-                //                 </div>
-                //             </div>
-                //         </a>
-                //     </li>
-                //     `
-                // })
-
             })
             .catch(() => console.error("Not found api"))
     },
